@@ -50,3 +50,9 @@ help:
 	@echo "  make lint          - Проверить код линтером"
 	@echo "  make format        - Отформатировать код"
 	@echo "  make check         - Проверить и отформатировать код"
+
+VD-calc:
+	uv run VD-calc
+
+VD-gcd:
+	uv run VD-gcd
