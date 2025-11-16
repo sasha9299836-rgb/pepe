@@ -1,7 +1,11 @@
 from games_project_lazarenko.games.guess_number import play
+from games_project_lazarenko.cli.welcome import welcome_user
+
 def main():
-    print("Добро пожаловать в игровое меню!")
+    welcome_user()
     print("=" * 30)
+    
     play()
+
 if __name__ == '__main__':
     main()

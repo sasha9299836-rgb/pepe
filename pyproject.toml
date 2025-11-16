@@ -1,11 +1,13 @@
 [project]
 name = "games-project-lazarenko"
-version = "0.1.0"
+version = "0.2.0"
 description = "вд-1"
 authors = [
     { name = "Arseniy Lazarenko", email = "sasha9299836-rgb@gmail.com" },
 ]
-dependencies = []
+dependencies = [
+    "prompt>=0.4.1",
+]
 readme = "README.md"
 
 [build-system]
