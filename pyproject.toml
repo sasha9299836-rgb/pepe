@@ -1,6 +1,6 @@
 [project]
 name = "games-project-lazarenko"
-version = "0.2.0"
+version = "0.3.0"
 description = "вд-1"
 authors = [
     { name = "Arseniy Lazarenko", email = "sasha9299836-rgb@gmail.com" },
@@ -14,5 +14,11 @@ readme = "README.md"
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+[dependency-groups]
+dev = [
+    "ruff>=0.14.5",
+]
+
 [project.scripts]
 games-app = "games_project_lazarenko.scripts.main:main"
+VD-even = "games_project_lazarenko.scripts.even:main"
