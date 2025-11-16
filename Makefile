@@ -12,6 +12,22 @@ VD-games:
 VD-even:
 	uv run VD-even
 
+# Запуск игры "Калькулятор"
+VD-calc:
+	uv run VD-calc
+
+# Запуск игры "НОД"
+VD-gcd:
+	uv run VD-gcd
+
+# Запуск игры "Арифметическая прогрессия"
+VD-progression:
+	uv run VD-progression
+
+# Запуск игры "Простое ли число?"
+VD-prime:
+	uv run VD-prime
+
 # Сборка пакета
 build:
 	uv build
@@ -25,11 +41,11 @@ rebuild: clean build
 
 # Проверка кода линтером
 lint:
-	uv run ruff check games_project_lazarenko/
+	uv run ruff check VD_games/
 
 # Форматирование кода
 format:
-	uv run ruff format games_project_lazarenko/
+	uv run ruff format VD_games/
 
 # Проверка и форматирование
 check: lint format
@@ -44,21 +60,13 @@ help:
 	@echo "  make install       - Установить зависимости"
 	@echo "  make VD-games      - Запустить основное приложение"
 	@echo "  make VD-even       - Запустить игру 'Проверка на чётность'"
+	@echo "  make VD-calc       - Запустить игру 'Калькулятор'"
+	@echo "  make VD-gcd        - Запустить игру 'НОД'"
+	@echo "  make VD-progression - Запустить игру 'Арифметическая прогрессия'"
+	@echo "  make VD-prime      - Запустить игру 'Простое ли число?'"
 	@echo "  make build         - Собрать пакет"
 	@echo "  make clean         - Очистить собранные файлы"
 	@echo "  make rebuild       - Полная пересборка"
 	@echo "  make lint          - Проверить код линтером"
 	@echo "  make format        - Отформатировать код"
 	@echo "  make check         - Проверить и отформатировать код"
-
-VD-calc:
-	uv run VD-calc
-
-VD-gcd:
-	uv run VD-gcd
-
-VD-progression:
-	uv run VD-progression
-
-VD-prime:
-	uv run VD-prime

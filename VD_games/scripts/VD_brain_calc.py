@@ -1,6 +1,6 @@
-from games_project_lazarenko.cli.welcome import welcome_user
-from games_project_lazarenko.game_engine import run_game
-from games_project_lazarenko.games.calc import generate_question
+from VD_games.cli import welcome_user
+from VD_games.engine import run_game
+from VD_games.games.calc import generate_question
 
 
 def main():

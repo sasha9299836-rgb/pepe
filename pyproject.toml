@@ -1,7 +1,7 @@
 [project]
-name = "games-project-lazarenko"
+name = "VD-games"
 version = "1.0.0"
-description = "игры"
+description = "Набор мини-игр для тренировки мозга"
 authors = [
     { name = "Arseniy Lazarenko", email = "sasha9299836-rgb@gmail.com" },
 ]
@@ -20,9 +20,9 @@ dev = [
 ]
 
 [project.scripts]
-games-app = "games_project_lazarenko.scripts.main:main"
-VD-even = "games_project_lazarenko.scripts.even:main"
-VD-calc = "games_project_lazarenko.scripts.calc:main"
-VD-gcd = "games_project_lazarenko.scripts.gcd:main"
-VD-progression = "games_project_lazarenko.scripts.progression:main"
-VD-prime = "games_project_lazarenko.scripts.prime:main"
+games-app = "VD_games.scripts.VD_main:main"
+VD-even = "VD_games.scripts.VD_even:main"
+VD-calc = "VD_games.scripts.VD_brain_calc:main"
+VD-gcd = "VD_games.scripts.VD_gcd:main"
+VD-progression = "VD_games.scripts.VD_progression:main"
+VD-prime = "VD_games.scripts.VD_prime:main"
